@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>FCC: Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="color-overlay">
+		<h1 id=title>Gaming Survey Form</h1>
+		<p id=description>Thank you for taking the time to answer some questions about gaming behavior</p>
+		<form id="survey-form">
+			<label for="name-label" id="name-label">Name<br>
+				<input type="text" id="name" placeholder="Enter your name" required>
+			</label>	
+				<br>
+			<label for="email-label" id="email-label">Email<br>
+				<input type="email" id="email" placeholder="Enter your Email" required>
+			</label>	
+				<br>
+			<label for="number-label" id="number-label">Age (optional)<br>
+				<input type="number" id="number" placeholder="Age" min="10" max="99">
+			</label>	
+				<br>
+			<label>What kind of gamer are you?<br>
+	    		<select id="dropdown" name="dropdown" required="required">
+	    			<option disabled selected>Select an option</option>
+	      			<option>Hardcore</option>
+	      			<option>Normal</option>
+	      			<option>Casual</option>
+		      		<option>I'm not really into gaming</option>
+	    		</select>
+	    	</label>	
+	    		<br>
+	    	<label>What's your prefered platform?<br>
+	    		<input type="radio" name="platform" value="pc">PC<br>
+	    		<input type="radio" name="platform" value="console">Console<br>
+	    		<input type="radio" name="platform" value="mobile">Mobile<br>
+	    	</label>
+	    		<br>
+	    	<label for="genres-label" id="genres-label">Which genres do you like?<br>
+	    		<input type="checkbox" name="genres" value="action">Action<br>
+	    		<input type="checkbox" name="genres" value="adventure">Adventure<br>
+	    		<input type="checkbox" name="genres" value="role-playing">Role-playing<br>
+	    		<input type="checkbox" name="genres" value="simulation">Simulation<br>
+	    		<input type="checkbox" name="genres" value="strategy">Strategy<br>
+	    		<input type="checkbox" name="genres" value="sports">Sports<br>
+	    		<input type="checkbox" name="genres" value="cardgame">Card game<br>
+	    		<input type="checkbox" name="genres" value="mobile">Mobile<br>
+	    		<input type="checkbox" name="genres" value="other">Other<br>
+	    	</label>
+	    		<br>
+	    	<label for="publishers-label" id="publishers-label">Which publishers do you prefer?<br>
+	    		<input type="checkbox" name="publishers" value="tencent">Tencent Games<br>
+	    		<input type="checkbox" name="publishers" value="sony">Sony<br>
+	    		<input type="checkbox" name="publishers" value="blizzard">Activision Blizzard<br>
+	    		<input type="checkbox" name="publishers" value="ea">EA<br>
+	    		<input type="checkbox" name="publishers" value="capcom">Capcom<br>
+	    		<input type="checkbox" name="publishers" value="taketwo">Take-Two<br>
+	    		<input type="checkbox" name="publishers" value="sega">Sega<br>
+	    		<input type="checkbox" name="publishers" value="konami">Konami<br>
+	    		<input type="checkbox" name="publishers" value="warner">Warner Bros.<br>
+	    		<input type="checkbox" name="publishers" value="cdprojekt">CD Projekt<br>
+	    		<input type="checkbox" name="publishers" value="nintendo">Nintendo<br>
+	    		<input type="checkbox" name="publishers" value="ubisoft">Ubisoft<br>
+	    		<input type="checkbox" name="publishers" value="bethesda">Bethesda<br>
+	    		<input type="checkbox" name="publishers" value="other">Other<br>
+	    		<input type="checkbox" name="publishers" value="indie">None (Indie)<br>
+	    	</label>
+	    		<br>		
+	    	<label for="textarea-label" id="textarea-label">What are your thoughts on the current state of the gaming industry?</label>	
+	    	<textarea id="textarea" placeholder="Enter your comment here..." rows="10"></textarea>
+	    		<br>	    	
+	    	<input type="submit" id="submit" value="Submit">	
+		</form>
+	</div>
+</body>
+</html>
