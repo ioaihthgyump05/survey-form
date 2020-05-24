@@ -121,9 +121,15 @@
 
 		}
 
-		@media only screen and (max-width: 800px) {
+		@media (max-width: 800px) {
 			#survey-form {
 				width: 400px;
+			}
+		}
+
+		@media (max-width: 400px) {
+			#survey-form {
+				width: 100%;
 			}
 		}
 
